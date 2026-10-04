@@ -81,21 +81,22 @@ through a single RFID-based platform.
 
 The LPC2148 acts as the main controller of the entire system. It manages RFID communication, LCD, keypad, EEPROM, UART and other peripherals.
 
-2. RFID Module
+### RFID Module
 
 The RFID reader reads the unique card number and transfers it to the LPC2148 through serial communication.
 
-3. LCD Module
+### LCD Module
 
-A 20x4 LCD is used to display:
+-- A 20x4 LCD is used to display:
 
-User information
-Menus
-Card status
-Banking information
-Voting options
-Driving license status
-4. Keypad Module
+- User information
+- Menus
+- Card status
+- Banking information
+- Voting options
+- Driving license status
+
+### Keypad Module
 
 The 4x4 matrix keypad is used for:
 
