@@ -2,13 +2,7 @@
 
 ## Objective
 
-The main objective of this project is to design and develop a secure RFID-Based Unified Citizen Service Management System that:
-
-- Authenticates users using RFID cards.
-- Provides multiple citizen services through one platform.
-- Provides digital identity verification.
-- Supports basic banking/ATM operations.
-- Provides an electronic voting facility.
-- Validates driving license information.
-- Uses password-based authentication for sensitive operations.
-- Stores required information and voting status in EEPROM.
+To design and develop an RFID-Based Unified Citizen Service Management System
+that enables secure user authentication and provides multiple citizen services such as digital
+identity verification, banking operations, electronic voting, and driving license validation
+through a single RFID-based platform. 
