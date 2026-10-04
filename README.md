@@ -1,4 +1,4 @@
-## RFID-Based-Unified-Citizen-Service-Management-System
+# RFID-Based-Unified-Citizen-Service-Management-System
 
 ## Objective
 
@@ -77,7 +77,7 @@ through a single RFID-based platform.
 
 ## Module Used
 
- # LPC2148 Microcontroller
+ ### LPC2148 Microcontroller
 
 The LPC2148 acts as the main controller of the entire system. It manages RFID communication, LCD, keypad, EEPROM, UART and other peripherals.
 
