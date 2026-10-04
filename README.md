@@ -105,22 +105,23 @@ Password entry
 Banking operations
 Voting selection
 RTC editing
-5. EEPROM Module
 
-The AT25LC512 EEPROM is used for storing information such as account balance and voting status.
+### EEPROM Module
 
-6. UART Module
+- The AT25LC512 EEPROM is used for storing information such as account balance and voting status.
 
-UART is used for serial communication, particularly for receiving RFID reader data.
+ ### UART Module
 
-7. SPI Module
+- UART is used for serial communication, particularly for receiving RFID reader data.
 
-SPI communication is used with the AT25LC512 EEPROM.
+### SPI Module
 
-8. RTC
+- SPI communication is used with the AT25LC512 EEPROM.
 
-The on-chip RTC is used to obtain the current date and compare it with the driving license expiry date.
+### RTC
 
-9. LED and Buzzer
+- The on-chip RTC is used to obtain the current date and compare it with the driving license expiry date.
 
-LEDs provide visual status indications, while the buzzer provides an alert for an invalid RFID card.
+### LED and Buzzer
+
+- LEDs provide visual status indications, while the buzzer provides an alert for an invalid RFID card.
