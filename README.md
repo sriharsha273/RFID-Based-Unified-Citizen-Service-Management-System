@@ -71,6 +71,55 @@ through a single RFID-based platform.
 - In the ATM section, the system performs balance enquiry, withdrawal, and deposit operations using data stored in EEPROM.
 - In the voting section, the system checks the user's voting status and allows voting only if the user has not already voted. The voting status is stored in EEPROM.
 - In the driving license section, the system reads the current date from the RTC and compares it with the license expiry date.
-+ If the license is valid, “Valid License” is displayed; otherwise, “Invalid License. Please renew your license” is displayed.
-An officer RFID card can be used to reset the voting status, allowing the voting system to be reused.
-After completing any operation, the system returns to the main menu and waits for the next user.
+- If the license is valid, “Valid License” is displayed; otherwise, “Invalid License. Please renew your license” is displayed.
+- An officer RFID card can be used to reset the voting status, allowing the voting system to be reused.
+- After completing any operation, the system returns to the main menu and waits for the next user.
+
+## Module Used
+
+ # LPC2148 Microcontroller
+
+The LPC2148 acts as the main controller of the entire system. It manages RFID communication, LCD, keypad, EEPROM, UART and other peripherals.
+
+2. RFID Module
+
+The RFID reader reads the unique card number and transfers it to the LPC2148 through serial communication.
+
+3. LCD Module
+
+A 20x4 LCD is used to display:
+
+User information
+Menus
+Card status
+Banking information
+Voting options
+Driving license status
+4. Keypad Module
+
+The 4x4 matrix keypad is used for:
+
+Menu selection
+Password entry
+Banking operations
+Voting selection
+RTC editing
+5. EEPROM Module
+
+The AT25LC512 EEPROM is used for storing information such as account balance and voting status.
+
+6. UART Module
+
+UART is used for serial communication, particularly for receiving RFID reader data.
+
+7. SPI Module
+
+SPI communication is used with the AT25LC512 EEPROM.
+
+8. RTC
+
+The on-chip RTC is used to obtain the current date and compare it with the driving license expiry date.
+
+9. LED and Buzzer
+
+LEDs provide visual status indications, while the buzzer provides an alert for an invalid RFID card.
