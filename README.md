@@ -56,7 +56,7 @@ through a single RFID-based platform.
 
 ## Working Principle
 1. The system is powered ON and the project name is displayed on the 20×4 LCD.
-The LCD displays “Waiting for Card” until an RFID card is placed near the RFID reader.
+2 .The LCD displays “Waiting for Card” until an RFID card is placed near the RFID reader.
 When the RFID card is detected, the RFID reader reads the card number and sends it to the LPC2148 microcontroller through serial communication at 9600 baud rate.
 The LPC2148 extracts the card number from the RFID data and checks whether the card is valid.
 If the card is invalid, the system displays “Invalid Card”, turns ON/blinks the red LED, and activates the buzzer.
